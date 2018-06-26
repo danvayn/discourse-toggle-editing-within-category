@@ -1,0 +1,4 @@
+plugins:
+  editless_categories_enabled:
+    default: false
+    client: true

@@ -1,0 +1,18 @@
+
+{{#if siteSettings.editless_categories_enabled}}
+  <section class='field'>
+    <div class="editless-categories">
+      <label class="checkbox-label">
+        {{input type="checkbox" checked=category.force_editless_posting}}
+        {{i18n 'toggle_editing_within_category.force_editless_posting'}}
+      </label>
+    </div>
+  </section>
+{{/if}}
+
+{{#unless siteSettings.editless_categories_enabled }}
+  <section class='field'>
+    {{i18n 'toggle_editing_within_category.force_editless_disabled'}}
+    <a href="/admin/site_settings/category/plugins">{{i18n 'toggle_editing_within_category.force_editless_disabled_click'}}</a>
+  </section>
+{{/unless}}
